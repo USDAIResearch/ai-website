@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  name            String
+  email           String   @unique
+  image           String
+  role            String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  researchPapers  ResearchPaper[]
+}
+
+model Author {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  label     String
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Theme {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  label     String
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Keyword {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  label     String
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ResearchPaper {
+  id         String     @id @default(auto()) @map("_id") @db.ObjectId
+  title      String
+  abstract   String
+  authors    Json
+  themes     Json
+  keywords   Json
+  attachment String
+  venue      String?
+  status     String     @default("active")
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  feedbacks  Feedback[]
+  user       User     @relation(fields: [userEmail], references: [email])
+  userEmail  String
+}
+
+model Feedback {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId
+  email           String
+  comment         String
+  rating          String
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  researchPaper   ResearchPaper @relation(fields: [researchPaperId], references: [id])
+  researchPaperId String
+  status          String        @default("active")
+}

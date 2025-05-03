@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  letter-spacing: 0.03em;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 7px; /* Set scrollbar width */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px; 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
