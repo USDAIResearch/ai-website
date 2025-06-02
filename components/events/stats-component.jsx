@@ -8,7 +8,7 @@ export default function StatsComponent() {
   const statsRef = useRef(null);
   const stats = [
     { value: 500, suffix: "+", label: "Annual Attendees", icon: Users },
-    { value: 25, suffix: "+", label: "Expert Speakers", icon: Award },
+    { value: 35, suffix: "+", label: "Expert Speakers", icon: Award },
     { value: 4, suffix: "", label: "Years of Excellence", icon: Calendar },
     { value: 12, suffix: "+", label: "Partner Organizations", icon: Building },
   ];
