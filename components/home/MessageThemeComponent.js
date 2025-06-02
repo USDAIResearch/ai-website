@@ -54,7 +54,7 @@ const MessageThemeComponent = () => {
               intelligent systems. Go Yotes!
             </p>
             <p className="pb-3">
-              Let&apos;s drive AI innovation together! #AI #DataScience
+              Let&apos;s drive AI innovations together! #AI #DataScience
               #Research #Opportunities
             </p>
             <a
