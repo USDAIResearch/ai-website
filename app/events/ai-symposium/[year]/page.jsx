@@ -202,9 +202,10 @@ const SpecificYearSymposium = () => {
 
 
             <p className="text-lg leading-relaxed text-justify">
-              Join us for the University of South Dakota's 7th annual Artificial Intelligence 
+              Join us for the University of South Dakota&apos;s 7th annual Artificial Intelligence 
               Symposium, sponsored by IEEE. This event brings together leading minds from academia, 
               industry and government to explore the cutting edge of AI and data engineering.
+
             </p>
 
             {/* Register Now CTA button */}

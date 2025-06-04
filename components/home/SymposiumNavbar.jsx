@@ -4,8 +4,8 @@ import React from "react";
 import { yanone } from "@/lib/fonts"; // or relative path if alias doesn't work
 
 const SymposiumNavbar = () => (
-  <div className="flex justify-end py-4 px-6 bg-white">
-    <div className="text-right">
+  <div className="flex justify-center py-4 px-6 bg-white">
+    <div className="text-center">
       <h1 className={`text-3xl sm:text-5xl font-bold text-red-700 leading-tight ${yanone.className}`}>
         7<sup className="text-xl align-top">th</sup> Artificial Intelligence Symposium*
       </h1>
@@ -18,5 +18,6 @@ const SymposiumNavbar = () => (
     </div>
   </div>
 );
+
 
 export default SymposiumNavbar;
