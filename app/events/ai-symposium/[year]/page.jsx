@@ -1,7 +1,9 @@
+// cSpell: disable
+
 "use client";
 import Layout from "@/components/commons/Layout";
 import Footer from "@/components/home/Footer";
-import Navbar from "@/components/home/Navbar";
+import SymposiumNavbar from "@/components/home/SymposiumNavbar";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -20,6 +22,8 @@ import {
 import ConferenceSchedule from "@/components/events/conference-schedule";
 import StatsComponent from "@/components/events/stats-component";
 import { Yanone_Kaffeesatz } from "next/font/google";
+import CommitteeMembers from "@/components/events/CommitteeMembers";
+import RegistrationInfo from "@/components/events/RegistrationInfo";
 
 const yanone = Yanone_Kaffeesatz({ subsets: ["latin"], weight: ["600"] });
 
@@ -158,7 +162,7 @@ const SpecificYearSymposium = () => {
 
   return (
     <Layout>
-      <Navbar />
+       <SymposiumNavbar />
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Hero Section */}
         <Link
@@ -172,7 +176,7 @@ const SpecificYearSymposium = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/banner-2.avif')",
+              // backgroundImage: "url('/images/banner-2.avif')",
               backgroundPosition: "left 10%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
@@ -185,38 +189,22 @@ const SpecificYearSymposium = () => {
               <h1
                 className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
               >
-                Artificial Intelligence Symposium {new Date().getFullYear()}
+                Welcome to 7th Artificial Intelligence Symposium {new Date().getFullYear()}
               </h1>
-              <div
-                className={`flex items-center mt-2 text-red-700 ${yanone.className}`}
-              >
-                <CalendarIcon className="h-6 w-6 mr-2 text-red-700" />
-                <span className="font-semibold text-red-700">
-                  June 23rd-June 25th, {new Date().getFullYear()}
-                </span>
-              </div>
             </div>
 
-            <p className="text-lg leading-tight mb-6 max-w-4xl">
-              The University of South Dakota will host the inaugural Workshop
-              for Artificial Intelligence (AI)-Powered Materials Discovery in
-              the Great Plains. This workshop will leverage the unique
-              geographical strengths of the Great Plains to bring together
-              approximately 200 researchers and educators from nine EPSCoR
-              jurisdictions, along with 40 leading experts in AI, engineering,
-              materials science, physical science, data science, and education
-              from around the world.
+             <p className="text-lg leading-relaxed text-justify mb-4">
+              USD’s Artificial Intelligence Symposium unites academia, industry and 
+              government AI & Data Engineering experts to solve current challenges in
+               various applications such as health care, cyberthreats, quantum computing, 
+               sustainable agriculture and risk management.
             </p>
 
-            <p className="text-lg leading-tight max-w-4xl">
-              The primary goal is to create opportunities for these
-              jurisdictions to play pivotal roles in developing a world-class,
-              data-driven materials research and education platform. This
-              platform will emphasize AI-driven approaches for designing and
-              producing high-performance materials and advancing education in
-              these fields. The envisioned platform will harness machine
-              learning (ML) to innovate the dynamic characterization, design,
-              and production of functional materials
+
+            <p className="text-lg leading-relaxed text-justify">
+              Join us for the University of South Dakota's 7th annual Artificial Intelligence 
+              Symposium, sponsored by IEEE. This event brings together leading minds from academia, 
+              industry and government to explore the cutting edge of AI and data engineering.
             </p>
 
             {/* Register Now CTA button */}
@@ -300,7 +288,7 @@ const SpecificYearSymposium = () => {
               <div>
                 <h3 className="font-medium text-gray-800">Location</h3>
                 <p className="text-gray-600">
-                  MUC Ballroom, 414 E. Clark Street, Vermillion, S.D., 57069
+                  University of South Dakota Discovery District, Sioux Falls, S.D., 57069 
                 </p>
                 <p className="text-gray-600">
                   <strong>OR</strong> Zoom (link will be provided through
@@ -316,53 +304,14 @@ const SpecificYearSymposium = () => {
               <div>
                 <h3 className="font-medium text-gray-800">Date</h3>
                 <p className="text-gray-600">
-                  June 23rd - June 25th, {new Date().getFullYear()}
+                  June 26 - 27, {new Date().getFullYear()}
                 </p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Registration Fees */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Registration Fees
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white">
-              <thead>
-                <tr>
-                  <th className="py-3 px-4 bg-gray-100 font-semibold text-left text-gray-800 border-b">
-                    Events
-                  </th>
-                  <th className="py-3 px-4 bg-gray-100 font-semibold text-left text-gray-800 border-b">
-                    Student
-                  </th>
-                  <th className="py-3 px-4 bg-gray-100 font-semibold text-left text-gray-800 border-b">
-                    Non-Student
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="py-3 px-4 border-b">Symposium</td>
-                  <td className="py-3 px-4 border-b">Free (with Student ID)</td>
-                  <td className="py-3 px-4 border-b">
-                    $150 (Covers Worshop Fee)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b">Workshop</td>
-                  <td className="py-3 px-4 border-b">$50</td>
-                  <td className="py-3 px-4 border-b">
-                    Covered by Symposium Fee
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
+        
+        <RegistrationInfo />
         {/* Sponsors Section */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -406,34 +355,39 @@ const SpecificYearSymposium = () => {
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6">
                 <img
+                  src="/images/logo.svg"
+                  alt="Sponsor 1"
+                  className="w-full h-24 object-contain"
+                />
+                <img
                   src="/images/sponsor/IEEE.jpeg"
                   alt="Sponsor 1"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
                 <img
                   src="/images/sponsor/Area.jpeg"
                   alt="Sponsor 2"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
                 <img
                   src="/images/sponsor/dakota.jpeg"
                   alt="Sponsor 3"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
                 <img
                   src="/images/sponsor/direct.jpeg"
                   alt="Sponsor 4"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
                 <img
                   src="/images/sponsor/journey.jpeg"
                   alt="Sponsor 5"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
                 <img
                   src="/images/sponsor/omnitech.jpeg"
                   alt="Sponsor 5"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-24 object-contain"
                 />
               </div>
             </div>
@@ -550,7 +504,7 @@ const SpecificYearSymposium = () => {
         </div>
         {/* Conference Schedule */}
         <ConferenceSchedule />
-
+        <CommitteeMembers />
         {/* Past Events */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
