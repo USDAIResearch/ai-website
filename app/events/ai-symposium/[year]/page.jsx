@@ -24,6 +24,8 @@ import StatsComponent from "@/components/events/stats-component";
 import { Yanone_Kaffeesatz } from "next/font/google";
 import CommitteeMembers from "@/components/events/CommitteeMembers";
 import RegistrationInfo from "@/components/events/RegistrationInfo";
+import Speakers from "@/components/events/Speakers";
+
 
 const yanone = Yanone_Kaffeesatz({ subsets: ["latin"], weight: ["600"] });
 
@@ -289,10 +291,10 @@ const SpecificYearSymposium = () => {
               <div>
                 <h3 className="font-medium text-gray-800">Location</h3>
                 <p className="text-gray-600">
-                  University of South Dakota Discovery District, Sioux Falls, S.D., 57069 
+                  GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107
                 </p>
                 <p className="text-gray-600">
-                  <strong>OR</strong> Zoom (link will be provided through
+                  <strong>OR</strong> <br /> Zoom (link will be provided through
                   registration)
                 </p>
               </div>
@@ -303,9 +305,13 @@ const SpecificYearSymposium = () => {
                 <CalendarIcon className="h-6 w-6 mx-auto text-red-500" />
               </div>
               <div>
-                <h3 className="font-medium text-gray-800">Date</h3>
-                <p className="text-gray-600">
+                <h3 className="font-medium text-gray-800">Date and time</h3>
+{/*                 <p className="text-gray-600">
                   June 26 - 27, {new Date().getFullYear()}
+                </p> */}
+                <p className="text-gray-600">
+                   Start: 26 June 2025 – 08:30 AM CDT<br />
+                    End: 27 June 2025 – 05:00 PM CDT
                 </p>
               </div>
             </div>
@@ -313,6 +319,10 @@ const SpecificYearSymposium = () => {
         </div>
         
         <RegistrationInfo />
+        <section id="speakers">
+           <Speakers />
+        </section>
+
         {/* Sponsors Section */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">

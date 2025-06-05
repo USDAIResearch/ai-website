@@ -6,6 +6,8 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const committeeData = {
   "Organizing Committee": [
     "KC Santosh, University of South Dakota, USA (Founder/Chair)",
+    "Dr. Rodrigue Rizk - University of South Dakota Computer Science Department",
+    "Dr. William Chen - University of South Dakota Sanford School of Medicine",
     "Catalin Georgescu, University of South Dakota, USA",
     "Joel Sander, University of South Dakota, USA"
   ],

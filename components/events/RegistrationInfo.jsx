@@ -25,17 +25,33 @@ export default function RegistrationInfo() {
           <p className="mb-4">
             This event is <strong>free for students</strong>, but registration is required to attend.
           </p>
-          <p>
+          <p className="mb-4">
             📌 Registration link:{" "}
             <a
-              href="https://vtools.ieee.org/events/register/your-event-id" // <-- Replace with actual link
+              href="https://events.vtools.ieee.org/m/487885"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-600 underline hover:text-red-800"
             >
-              Register on vTools
+              https://events.vtools.ieee.org/m/487885
             </a>
           </p>
+
+          <div>
+            <h3 className="font-medium text-gray-800">Registration Starts</h3>
+            <p className="text-gray-600">
+              🕔 06 June 2025 – 12:00 AM (CDT)
+            </p>
+            <h3 className="font-medium text-gray-800 mt-2">Ends</h3>
+            <p className="text-gray-600">
+              🕔 26 June 2025 – 12:00 AM (CDT)
+            </p>
+          </div>
+          <br />
+          <p className="mb-4">
+            <strong>🎓 Certificate of Participation will be provided to all registered attendees.</strong> 
+          </p>
+
         </div>
       )}
     </div>
