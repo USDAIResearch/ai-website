@@ -33,7 +33,7 @@ export default function Speakers() {
 
         <div>
           <h3 className="text-lg font-semibold text-gray-900">
-            Dr. Kaifu Chen – Harvard Medical School / Boston Children's Hospital
+           Dr. Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital
           </h3>
           <p className="text-gray-700">
            Associate Professor at Harvard Medical School 

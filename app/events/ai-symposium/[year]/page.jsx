@@ -291,10 +291,11 @@ const SpecificYearSymposium = () => {
               <div>
                 <h3 className="font-medium text-gray-800">Location</h3>
                 <p className="text-gray-600">
-                  GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107
+                  University of South Dakota Discovery District, Sioux Falls, S.D., 57069
+                  {/* GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107 */}
                 </p>
                 <p className="text-gray-600">
-                  <strong>OR</strong> <br /> Zoom (link will be provided through
+                  <strong>OR</strong> Zoom (link will be provided through
                   registration)
                 </p>
               </div>
@@ -306,13 +307,13 @@ const SpecificYearSymposium = () => {
               </div>
               <div>
                 <h3 className="font-medium text-gray-800">Date and time</h3>
-{/*                 <p className="text-gray-600">
-                  June 26 - 27, {new Date().getFullYear()}
-                </p> */}
                 <p className="text-gray-600">
+                  June 26 - 27, {new Date().getFullYear()}
+                </p> 
+{/*                 <p className="text-gray-600">
                    Start: 26 June 2025 – 08:30 AM CDT<br />
                     End: 27 June 2025 – 05:00 PM CDT
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -320,7 +321,7 @@ const SpecificYearSymposium = () => {
         
         <RegistrationInfo />
         <section id="speakers">
-           <Speakers />
+           {/* <Speakers /> */}
         </section>
 
         {/* Sponsors Section */}

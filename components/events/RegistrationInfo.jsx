@@ -36,7 +36,7 @@ export default function RegistrationInfo() {
               https://events.vtools.ieee.org/m/487885
             </a>
           </p>
-
+{/* 
           <div>
             <h3 className="font-medium text-gray-800">Registration Starts</h3>
             <p className="text-gray-600">
@@ -46,11 +46,11 @@ export default function RegistrationInfo() {
             <p className="text-gray-600">
               🕔 26 June 2025 – 12:00 AM (CDT)
             </p>
-          </div>
+          </div> */}
           <br />
-          <p className="mb-4">
+{/*           <p className="mb-4">
             <strong>🎓 Certificate of Participation will be provided to all registered attendees.</strong> 
-          </p>
+          </p> */}
 
         </div>
       )}
