@@ -3,51 +3,21 @@ export default function Speakers() {
     <div className="bg-white rounded-lg shadow-md p-6 mb-8">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">🎤 Speakers</h2>
 
-      <div className="space-y-6">
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900">
-            Dr. George Awad – National Institute of Standards and Technology (NIST)
-          </h3>
-          <p className="text-gray-700">
-           Computer Scientist/Project Leader
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900">
-            Gopi Challagolla – Microsoft
-          </h3>
-          <p className="text-gray-700">
-            Software Engineer
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900">
-            Dr. Douglas Lauffenburger – MIT
-          </h3>
-          <p className="text-gray-700">
-             Full Professor and Founding Chair of the Department of Biological Engineering 
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900">
-           Dr. Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital
-          </h3>
-          <p className="text-gray-700">
-           Associate Professor at Harvard Medical School 
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900">
-            Dr. Yinglong Miao – University of North Carolina Chapel Hill
-          </h3>
-          <p className="text-gray-700">
-            Associate Professor 
-          </p>
-        </div>
+      <div className="space-y-4 text-gray-700">
+        <p>Dr. George Awad, Computer Scientist/Project Leader, National Institute of Standards and Technology (NIST)</p>
+        <p>Gopi Challagolla, Software Engineer, Microsoft</p>
+        <p>Dr. Douglas Lauffenburger, Full Professor and Founding Chair of Dept of Biological Engineering at MIT</p>
+        <p>Dr. Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital</p>
+        <p>Dr. Yinglong Miao, Associate Professor at University of North Carolina Chapel Hill</p>
+        <p>Dr. Kinchel C. Doerner, Director, SD EPSCoR</p>
+        <p>Peter Doucette, Director, EROS Center</p>
+        <p>Joni Ekstrum, Executive Director, South Dakota Biotech</p>
+        <p>Dan Buresh, Director of Data Management, Direct Companies</p>
+        <p>Carson Merkwan, Director of Business Development, Direct Companies</p>
+        <p>Joseph J. Schueder, Senior Technical Fellow, Collins Aerospace</p>
+        <p>Joseph Engler, Chief AI Scientist, Collins Aerospace</p>
+        <p>Chris Reuter, Sr. Principal AI Engineer, Collins Aerospace</p>
+        <p className="italic text-gray-500">… more coming soon.</p>
       </div>
     </div>
   );

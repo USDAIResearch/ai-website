@@ -5,11 +5,11 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const committeeData = {
   "Organizing Committee": [
-    "KC Santosh, University of South Dakota, USA (Founder/Chair)",
-    // "Dr. Rodrigue Rizk - University of South Dakota Computer Science Department",
-    // "Dr. William Chen - University of South Dakota Sanford School of Medicine",
-    "Catalin Georgescu, University of South Dakota, USA",
-    "Joel Sander, University of South Dakota, USA"
+    "KC Santosh, Chair & Professor, University of South Dakota (Founding Chair, AI Symposium & Co-Chair, SDBCC)",
+    "William CW Chen, Assist. Professor, University of South Dakota (Chair, SDBCC)",
+    "Jeffrey McGough, Head & Professor, South Dakota School of Mines (Co-Chair, SDBCC)",
+    "Rodrigue Rizk, Assist. Professor/Grad Coord, University of South Dakota (Co-Chair, AI Symposium)",
+    "Robert Burke, Conference Committee Chair, IEEE Region 4"
   ],
   "Symposium Secretary": [
     "Rodrigue Rizk, University of South Dakota, USA"

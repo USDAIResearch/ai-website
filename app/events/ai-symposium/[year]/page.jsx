@@ -196,17 +196,17 @@ const SpecificYearSymposium = () => {
             </div>
 
              <p className="text-lg leading-relaxed text-justify mb-4">
-              USD’s Artificial Intelligence Symposium unites academia, industry and 
-              government AI & Data Engineering experts to solve current challenges in
-               various applications such as health care, cyberthreats, quantum computing, 
-               sustainable agriculture and risk management.
+              Join us for the University of South Dakota’s 7th Annual Artificial Intelligence 
+              Symposium—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by 
+              IEEE and held in conjunction with the inaugural South Dakota Biomedical Computation Consortium (SDBCC).
             </p>
 
 
             <p className="text-lg leading-relaxed text-justify">
-              Join us for the University of South Dakota&apos;s 7th annual Artificial Intelligence 
-              Symposium, sponsored by IEEE. This event brings together leading minds from academia, 
-              industry and government to explore the cutting edge of AI and data engineering.
+             This premier event brings together thought leaders from academia, industry,
+              and government to explore the forefront of artificial intelligence, data engineering,
+               quantum computing, cyber threats, risk management, sustainable agriculture, healthcare,
+                and biomedical computing.
 
             </p>
 
@@ -320,9 +320,9 @@ const SpecificYearSymposium = () => {
         </div>
         
         <RegistrationInfo />
-        <section id="speakers">
-           {/* <Speakers /> */}
-        </section>
+       
+            <Speakers /> 
+      
 
         {/* Sponsors Section */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
