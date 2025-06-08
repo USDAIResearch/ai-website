@@ -4,12 +4,12 @@ export default function Speakers() {
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">🎤 Speakers</h2>
 
       <div className="space-y-4 text-gray-700">
-        <p>Dr. George Awad, Computer Scientist/Project Leader, National Institute of Standards and Technology (NIST)</p>
+        <p>George Awad, Computer Scientist/Project Leader, National Institute of Standards and Technology (NIST)</p>
         <p>Gopi Challagolla, Software Engineer, Microsoft</p>
-        <p>Dr. Douglas Lauffenburger, Full Professor and Founding Chair of Dept of Biological Engineering at MIT</p>
-        <p>Dr. Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital</p>
-        <p>Dr. Yinglong Miao, Associate Professor at University of North Carolina Chapel Hill</p>
-        <p>Dr. Kinchel C. Doerner, Director, SD EPSCoR</p>
+        <p>Douglas Lauffenburger, Full Professor and Founding Chair of Dept of Biological Engineering at MIT</p>
+        <p>Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital</p>
+        <p>Yinglong Miao, Associate Professor at University of North Carolina Chapel Hill</p>
+        <p>Kinchel C. Doerner, Director, SD EPSCoR</p>
         <p>Peter Doucette, Director, EROS Center</p>
         <p>Joni Ekstrum, Executive Director, South Dakota Biotech</p>
         <p>Dan Buresh, Director of Data Management, Direct Companies</p>
