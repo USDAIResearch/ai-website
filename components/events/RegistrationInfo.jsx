@@ -48,9 +48,9 @@ export default function RegistrationInfo() {
             </p>
           </div> */}
           <br />
-{/*           <p className="mb-4">
-            <strong>🎓 Certificate of Participation will be provided to all registered attendees.</strong> 
-          </p> */}
+           <p className="mb-4">
+            <strong>🎓 Sign up, attend, and receive a certificate of participation immediately after the event! </strong> 
+          </p> 
 
         </div>
       )}
