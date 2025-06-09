@@ -120,45 +120,19 @@ const SpecificYearSymposium = () => {
   const sponsorshipTiers = [
     {
       tier: "Platinum",
-      cost: "$10,000",
-      benefits: [
-        "Prominent logo placement on event materials",
-        "Exhibition booth in premium location",
-        "5 complimentary registrations",
-        "20-minute speaking opportunity",
-        "Recognition during opening and closing ceremonies",
-        "Full-page ad in digital program",
-      ],
+      cost: "$3,000",
     },
     {
       tier: "Gold",
-      cost: "$5,000",
-      benefits: [
-        "Logo placement on event materials",
-        "Exhibition booth",
-        "3 complimentary registrations",
-        "Recognition during opening ceremony",
-        "Half-page ad in digital program",
-      ],
+      cost: "$2,000",
     },
     {
       tier: "Silver",
-      cost: "$2,500",
-      benefits: [
-        "Logo placement on event website",
-        "Table display",
-        "2 complimentary registrations",
-        "Quarter-page ad in digital program",
-      ],
+      cost: "$1,000",
     },
     {
       tier: "Bronze",
-      cost: "$1,000",
-      benefits: [
-        "Name listed on event website",
-        "1 complimentary registration",
-        "Logo in digital program",
-      ],
+      cost: "$500",
     },
   ];
 
@@ -450,16 +424,6 @@ const SpecificYearSymposium = () => {
                     `}
                     >
                       {tier.tier} Sponsorship - {tier.cost}
-                    </div>
-                    <div className="p-4">
-                      <ul className="space-y-2">
-                        {tier.benefits.map((benefit, i) => (
-                          <li key={i} className="flex items-start">
-                            <CheckIcon className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                            <span>{benefit}</span>
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                   </div>
                 ))}
