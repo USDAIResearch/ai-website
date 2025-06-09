@@ -64,6 +64,24 @@ const committeeData = {
     "Sunil Aryal, Deakin University, AUS",
     "Ameni Boumaiza, Hamad Bin Khalifa University, Qatar",
     "Fayadh Alenezi, Jouf University, Saudi Arabia"
+  ],
+ "Logistics & Operations": [
+    "Ryan Oines, Chief Operating Officer, USD Discovery District",
+    "Marc-Antoine Niamba, Biotech Development, USD Discovery District",
+    "Laura Wiemers, Management Analyst, University of South Dakota",
+    "Cassie Stolpe, Administrative Assistant, University of South Dakota",
+    "Kirby Fuglsby, Technology Transfer Officer, University of South Dakota",
+    "Hanna DeLange, Public Relations & Content Strategist, University of South Dakota",
+    "Alissa Matt, Assist VP for Marketing & University Relations, University of South Dakota"
+  ],
+  "Advisory Board Members": [
+    "Sheila Gestring, President, University of South Dakota",
+    "Jay Perry, Vice President, University of South Dakota – Sioux Falls",
+    "Dan Engebretson, Vice President, Research & Sponsored Programs, University of South Dakota",
+    "Kurt Hackemer, Vice President for Academic Affairs & Provost, University of South Dakota",
+    "John Dudley, Dean, College of Arts & Science, University of South Dakota",
+    "Tim Ridgway, Vice President of Health Affairs and Dean of the Sanford School of Medicine, University of South Dakota",
+    "William Mayhan, Dean, Biomedical Sciences, University of South Dakota"
   ]
 };
 
