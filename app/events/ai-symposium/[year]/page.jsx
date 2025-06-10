@@ -170,9 +170,10 @@ const SpecificYearSymposium = () => {
             </div>
 
              <p className="text-lg leading-relaxed text-justify mb-4">
-              Join us for the University of South Dakota’s 7th Annual Artificial Intelligence 
-              Symposium—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by 
-              IEEE and held in conjunction with the inaugural South Dakota Biomedical Computation Consortium (SDBCC).
+               Join us for the University of South Dakota’s 
+               7th Annual <a href="https://www.ai-research-lab.org/events/ai-symposium/2025" className="font-bold underline">Artificial 
+               Intelligence Symposium</a>—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by IEEE and held in conjunction with the inaugural <a href="https://sites.google.com/view/sdbcc" 
+                className="font-bold underline">South Dakota Biomedical Computation Consortium (SDBCC)</a>.
             </p>
 
 
@@ -188,66 +189,6 @@ const SpecificYearSymposium = () => {
           </div>
         </div>
 
-        {/* Key Benefits */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Why Attend
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-start">
-              <div className="bg-red-100 p-2 rounded-full mr-3">
-                <CheckIcon className="text-red-500 h-6 w-6" />
-              </div>
-              <div>
-                <h3 className="font-medium text-gray-800">Collaborate</h3>
-                <p className="text-gray-600">
-                  Work with experts to brainstorm solutions in healthcare,
-                  cybersecurity, quantum computing, agriculture and risk
-                  management.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="bg-red-100 p-2 rounded-full mr-3">
-                <GraduationCap className="text-red-500 h-6 w-6" />
-              </div>
-              <div>
-                <h3 className="font-medium text-gray-800">Learn</h3>
-                <p className="text-gray-600">
-                  Gain insights from established AI professionals through
-                  engaging symposium sessions.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="bg-red-100 p-2 rounded-full mr-3">
-                <UsersIcon className="text-red-500 h-6 w-6" />
-              </div>
-              <div>
-                <h3 className="font-medium text-gray-800">Connect</h3>
-                <p className="text-gray-600">
-                  Build valuable connections with like-minded individuals both
-                  in-person and virtually.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="bg-red-100 p-2 rounded-full mr-3">
-                <FileQuestion className="text-red-500 h-6 w-6" />
-              </div>
-              <div>
-                <h3 className="font-medium text-gray-800">Discover</h3>
-                <p className="text-gray-600">
-                  Learn about the latest advancements in AI and how they can
-                  impact your field.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Known for Excellence */}
         <StatsComponent />
@@ -265,11 +206,11 @@ const SpecificYearSymposium = () => {
               <div>
                 <h3 className="font-medium text-gray-800">Location</h3>
                 <p className="text-gray-600">
-                  University of South Dakota Discovery District, Sioux Falls, S.D., 57069
-                  {/* GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107 */}
+                  {/* University of South Dakota Discovery District, Sioux Falls, S.D., 57069 */}
+                   GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107 
                 </p>
                 <p className="text-gray-600">
-                  <strong>OR</strong> Zoom (link will be provided through
+                  <strong>OR</strong> <br /> Zoom (link will be provided through
                   registration)
                 </p>
               </div>
@@ -481,6 +422,7 @@ const SpecificYearSymposium = () => {
         {/* Conference Schedule */}
         <ConferenceSchedule />
         <CommitteeMembers />
+
         {/* Past Events */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -578,7 +520,66 @@ const SpecificYearSymposium = () => {
           </div>
         </div>
       </div>
+                {/* Key Benefits */}
+        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            Why Attend
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="flex items-start">
+              <div className="bg-red-100 p-2 rounded-full mr-3">
+                <CheckIcon className="text-red-500 h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-800">Collaborate</h3>
+                <p className="text-gray-600">
+                  Work with experts to brainstorm solutions in healthcare,
+                  cybersecurity, quantum computing, agriculture and risk
+                  management.
+                </p>
+              </div>
+            </div>
 
+            <div className="flex items-start">
+              <div className="bg-red-100 p-2 rounded-full mr-3">
+                <GraduationCap className="text-red-500 h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-800">Learn</h3>
+                <p className="text-gray-600">
+                  Gain insights from established AI professionals through
+                  engaging symposium sessions.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="bg-red-100 p-2 rounded-full mr-3">
+                <UsersIcon className="text-red-500 h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-800">Connect</h3>
+                <p className="text-gray-600">
+                  Build valuable connections with like-minded individuals both
+                  in-person and virtually.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="bg-red-100 p-2 rounded-full mr-3">
+                <FileQuestion className="text-red-500 h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-800">Discover</h3>
+                <p className="text-gray-600">
+                  Learn about the latest advancements in AI and how they can
+                  impact your field.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       {/* Go to Top Button */}
       {showGoToTop && (
         <button
