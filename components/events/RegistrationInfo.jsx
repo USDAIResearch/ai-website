@@ -23,7 +23,7 @@ export default function RegistrationInfo() {
       {isOpen && (
         <div className="mt-4 border-t pt-4 text-gray-700 text-base">
           <p className="mb-4">
-            This event is <strong>free for students</strong>, but registration is required to attend.
+            This event is <strong>free</strong>, but registration is required to attend.
           </p>
           <p className="mb-4">
             📌 Registration link:{" "}
@@ -47,7 +47,6 @@ export default function RegistrationInfo() {
               🕔 26 June 2025 – 12:00 AM (CDT)
             </p>
           </div> */}
-          <br />
            <p className="mb-4">
             <strong>🎓 Sign up, attend, and receive a certificate of participation immediately after the event! </strong> 
           </p> 
