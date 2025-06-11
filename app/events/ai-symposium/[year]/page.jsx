@@ -172,7 +172,7 @@ const SpecificYearSymposium = () => {
              <p className="text-lg leading-relaxed text-justify mb-4">
                Join us for the University of South Dakota’s 
                7th Annual <a href="https://www.ai-research-lab.org/events/ai-symposium/2025" className="font-bold underline">Artificial 
-               Intelligence Symposium</a>—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by IEEE and held in conjunction with the inaugural <a href="https://sites.google.com/view/sdbcc" 
+               Intelligence Symposium</a>—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by IEEE and held in conjunction with the inaugural <a href="https://sd-bcc.org/" 
                 className="font-bold underline">South Dakota Biomedical Computation Consortium (SDBCC)</a>.
             </p>
 
@@ -207,7 +207,7 @@ const SpecificYearSymposium = () => {
                 <h3 className="font-medium text-gray-800">Location</h3>
                 <p className="text-gray-600">
                   {/* University of South Dakota Discovery District, Sioux Falls, S.D., 57069 */}
-                   GEAR Center <br /> USD Discovery District <br /> 4800 N. Career Ave. Suite 221 <br /> Sioux Falls, SD 57107 
+                   USD Sioux Falls <br /> Avera Hall <br /> 4801 N. Career Ave. <br /> Sioux Falls, SD 57107 
                 </p>
                 <p className="text-gray-600">
                   <strong>OR</strong> <br /> Zoom (link will be provided through
