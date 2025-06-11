@@ -10,7 +10,7 @@ export default function Speakers() {
         <p>Kaifu Chen, Associate Professor at Harvard Med School / Boston Children&apos;s Hospital</p>
         <p>Yinglong Miao, Associate Professor at University of North Carolina Chapel Hill</p>
         <p>Kinchel C. Doerner, Director, SD EPSCoR</p>
-        <p>Peter Doucette, Director, EROS Center</p>
+        <p>Pete Doucette, Director, EROS Center</p>
         <p>Joni Ekstrum, Executive Director, South Dakota Biotech</p>
         <p>Dan Buresh, Director of Data Management, Direct Companies</p>
         <p>Carson Merkwan, Director of Business Development, Direct Companies</p>

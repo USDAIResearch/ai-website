@@ -49,7 +49,8 @@ const committeeData = {
     "Xi-Zhao Wang, ShenZhen University, China",
     "Sunil Aryal, Deakin University, AUS",
     "Ameni Boumaiza, Hamad Bin Khalifa University, Qatar",
-    "Debasmita Ghosh Roy, Banasthali Vidyapith, India"
+    "Debasmita Ghosh Roy, Banasthali Vidyapith, India",
+    "Priti Rai, University of Delhi, India"
   ],
   "Logistics & Operations": [
     "Ryan Oines, Chief Operating Officer, USD Discovery District",
