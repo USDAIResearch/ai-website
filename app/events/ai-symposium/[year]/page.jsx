@@ -316,6 +316,11 @@ const SpecificYearSymposium = () => {
                   alt="Sponsor 5"
                   className="w-full h-24 object-contain"
                 />
+                <img
+                  src="/images/sponsor/ieee_usa.jpeg"
+                  alt="Sponsor 5"
+                  className="w-full h-24 object-contain"
+                />
               </div>
             </div>
           )}
