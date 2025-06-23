@@ -96,7 +96,7 @@ export default function ConferenceSchedule() {
 
           <div className="mt-6 text-center">
             <a
-              a href="/resources/AI%20Symposium%202025%20-%20Schedule.pdf" 
+              a href="/resources/AI_Symposium_Schedule.pdf" 
               className="text-red-600 underline font-medium" 
               download
             >
