@@ -6,8 +6,8 @@ export default function ConferenceSchedule() {
   const [activeDay, setActiveDay] = useState("day1");
 
   const dates = {
-    day1: "Mon 26/06",
-    day2: "Tue 27/06",
+    day1: "Thu 26/06",
+    day2: "Fri 27/06",
   };
 
   const scheduleData = {
