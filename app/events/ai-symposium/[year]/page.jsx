@@ -270,55 +270,86 @@ const SpecificYearSymposium = () => {
             </button>
           </div>
 
-          {/* Current Sponsors Content */}
-          {activeTab === "current" && (
-            <div>
-              <p className="text-gray-600 mb-6">
-                We&apos;re grateful to the following organizations for their
-                support of the AI Symposium {new Date().getFullYear()}. Their
-                partnership enables us to provide world-class content and
-                experiences for our attendees.
-              </p>
+{/* Current Sponsors Content */}
+{activeTab === "current" && (
+  <div>
+    {/* Intro Section */}
+    <div className="bg-red-50 p-4 rounded-lg mb-6">
+      <div className="flex items-start">
+        <HandCoins className="text-red-500 h-6 w-6 mr-3 mt-1" />
+        <div>
+          <h3 className="font-medium text-gray-800">
+            Honoring Our 2025 Sponsors
+          </h3>
+          <p className="text-gray-600">
+            We're grateful to the following organizations for their support of the AI Symposium {new Date().getFullYear()}. Their partnership enables us to provide world-class content and experiences for our attendees.
+          </p>
+        </div>
+      </div>
+    </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6">
-                <img
-                  src="/images/logo.svg"
-                  alt="Sponsor 1"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/IEEE.jpeg"
-                  alt="Sponsor 1"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/Area.jpeg"
-                  alt="Sponsor 2"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/dakota.jpeg"
-                  alt="Sponsor 3"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/direct.png"
-                  alt="Sponsor 4"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/ieee_usa.jpeg"
-                  alt="Sponsor 5"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/Sterling.jpg"
-                  alt="Sponsor 6"
-                  className="w-full h-24 object-contain"
-                />
-              </div>
-            </div>
-          )}
+    {/* All Sponsor Categories in One Row */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      {/* GOLD Sponsors */}
+      <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col">
+        <div className="py-2 px-3 font-semibold text-white bg-yellow-500 text-center">
+          Gold Sponsors
+        </div>
+        <div className="bg-gray-50 grid grid-cols-2 p-2 gap-0">
+          <div className="flex items-center justify-center h-24">
+            <img src="/images/sponsor/dakota.png" alt="Dakota" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+      </div>
+
+      {/* SILVER Sponsors */}
+      <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col">
+        <div className="py-2 px-3 font-semibold text-white bg-gray-400 text-center">
+          Silver Sponsors
+        </div>
+        <div className="bg-gray-50 grid grid-cols-2 p-2 gap-0">
+          <div className="flex items-center justify-center h-24">
+            <img src="/images/sponsor/Sterling.png" alt="Sterling" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="flex items-center justify-center h-24">
+            <img src="/images/sponsor/ieee_usa.png" alt="IEEE USA" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+      </div>
+
+      {/* BRONZE Sponsors */}
+      <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col">
+        <div className="py-2 px-3 font-semibold text-white bg-yellow-700 text-center">
+          Bronze Sponsors
+        </div>
+        <div className="bg-gray-50 grid grid-cols-2 p-2 gap-0">
+          <div className="flex items-center justify-center h-24">
+            <img src="/images/sponsor/Area.png" alt="Direct Companies" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+      </div>
+
+      {/* PARTNERS */}
+      <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col">
+        <div className="py-2 px-3 font-semibold text-white bg-gray-700 text-center">
+          Partners
+        </div>
+        <div className="bg-gray-50 grid grid-cols-2 p-2 gap-0">
+          <div className="flex items-center justify-center h-20">
+            <img src="/images/sponsor/IEEE.png" alt="IEEE" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="flex items-center justify-center h-20">
+            <img src="/images/sponsor/logo.png" alt="Generic Partner" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="flex items-center justify-center h-20 col-span-2">
+            <img src="/images/sponsor/SD-BCC.png" alt="SD BCC" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
 
           {/* Become a Sponsor Content */}
           {activeTab === "become" && (
