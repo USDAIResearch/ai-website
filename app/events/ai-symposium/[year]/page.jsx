@@ -307,16 +307,6 @@ const SpecificYearSymposium = () => {
                   className="w-full h-24 object-contain"
                 />
                 <img
-                  src="/images/sponsor/journey.jpeg"
-                  alt="Sponsor 5"
-                  className="w-full h-24 object-contain"
-                />
-                <img
-                  src="/images/sponsor/omnitech.jpeg"
-                  alt="Sponsor 5"
-                  className="w-full h-24 object-contain"
-                />
-                <img
                   src="/images/sponsor/ieee_usa.jpeg"
                   alt="Sponsor 5"
                   className="w-full h-24 object-contain"
