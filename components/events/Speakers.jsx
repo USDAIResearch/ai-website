@@ -1,18 +1,25 @@
 export default function Speakers() {
   const speakerList = [
     "George Awad, Computer Scientist/Project Leader, National Institute of Standards and Technology (NIST)",
-    "Gopi Challagolla, Software Engineer, Microsoft",
-    "Douglas Lauffenburger, Full Professor and Founding Chair of Dept of Biological Engineering at MIT",
-    "Kaifu Chen, Associate Professor at Harvard Med School / Boston Children's Hospital",
-    "Yinglong Miao, Associate Professor at University of North Carolina Chapel Hill",
-    "Kinchel C. Doerner, Director, SD EPSCoR",
     "Pete Doucette, Director, EROS Center",
-    "Joni Ekstrum, Executive Director, South Dakota Biotech",
-    "Dan Buresh, Director of Data Management, Direct Companies",
-    "Carson Merkwan, Director of Business Development, Direct Companies",
     "Joseph J. Schueder, Senior Technical Fellow, Collins Aerospace",
     "Joseph Engler, Chief AI Scientist, Collins Aerospace",
-    "Chris Reuter, Sr. Principal AI Engineer, Collins Aerospace"
+    "Chris Reuter, Sr. Principal AI Engineer, Collins Aerospace",
+    "Gopi Challagolla, Software Engineer, Microsoft",
+    "Kinchel C. Doerner, Director, SD EPSCoR",
+    "Carson Merkwan, Director of Business Development, Direct Companies",
+    "Eric Freer, Representative, Sterling",
+    "Dan Klosterman, Representative, Edge Team",
+    "Rajesh Kavasseri, South Dakota State University (SDSU)",
+    "David Zeng, Dakota State University (DSU)",
+    "Douglas Lauffenburger, Full Professor and Founding Chair, Dept of Biological Engineering, MIT",
+    "Kaifu Chen, Associate Professor, Harvard Med School / Boston Children's Hospital",
+    "Yinglong Miao, Associate Professor, University of North Carolina Chapel Hill",
+    "Kara McCormick, Executive Director, South Dakota Biotech",
+    "Sujit Sakpal, Avera",
+    "KC Santosh, University of South Dakota / SDBCC",
+    "William Chen, University of South Dakota / SDBCC",
+    "Jeffrey S. McGough, South Dakota School of Mines and Technology / SDBCC"
   ];
 
   return (
