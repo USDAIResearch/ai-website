@@ -302,7 +302,7 @@ const SpecificYearSymposium = () => {
                   className="w-full h-24 object-contain"
                 />
                 <img
-                  src="/images/sponsor/direct.jpeg"
+                  src="/images/sponsor/direct.png"
                   alt="Sponsor 4"
                   className="w-full h-24 object-contain"
                 />
