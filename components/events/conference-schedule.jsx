@@ -45,7 +45,7 @@ export default function ConferenceSchedule() {
         time: "2:00 PM - 4:00 PM",
         title: "Panel Discussion: Biomedical Computation and AI",
         details:
-          "Panelists: Kara McCormick (SD BioTech), Sujit Sakpal (Avera), KC Santosh (USD/SDBCC), William Chen (USD/SDBCC), Jeffrey S McGough (SDSMT/SDBCC); Moderator: Jose Lira (Vermillion Unplugged)",
+          "Panelists: Kara McCormick (SD BioTech), Sujit Sakpal (Avera), KC Santosh (USD/SDBCC), William Chen (USD/SDBCC), Jeffrey S McGough (SDSMT/SDBCC), Gregory Bertsch (University of South Dakota); Moderator: Jose Lira (Vermillion Unplugged)",
       },
     ],
   };
