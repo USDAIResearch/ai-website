@@ -238,186 +238,194 @@ const SpecificYearSymposium = () => {
        
             <Speakers /> 
       
+{/* Sponsors Section */}
+<div className="bg-white rounded-lg shadow-md p-6 mb-8">
+  <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+    <Award className="inline-block mr-2 text-red-500" size={24} />
+    Our Sponsors
+  </h2>
 
-        {/* Sponsors Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            <Award className="inline-block mr-2 text-red-500" size={24} />
-            Our Sponsors
-          </h2>
+  {/* Sponsors Tab Navigation */}
+  <div className="flex border-b mb-6">
+    <button
+      className={`py-2 px-4 font-medium ${
+        activeTab === "current"
+          ? "border-b-2 border-red-500 text-red-600"
+          : "text-gray-600"
+      }`}
+      onClick={() => setActiveTab("current")}
+    >
+      Current Sponsors
+    </button>
+    <button
+      className={`py-2 px-4 font-medium ${
+        activeTab === "become"
+          ? "border-b-2 border-red-500 text-red-600"
+          : "text-gray-600"
+      }`}
+      onClick={() => setActiveTab("become")}
+    >
+      Become a Sponsor
+    </button>
+  </div>
 
-          {/* Sponsors Tab Navigation */}
-          <div className="flex border-b mb-6">
-            <button
-              className={`py-2 px-4 font-medium ${
-                activeTab === "current"
-                  ? "border-b-2 border-red-500 text-red-600"
-                  : "text-gray-600"
-              }`}
-              onClick={() => setActiveTab("current")}
-            >
-              Current Sponsors
-            </button>
-            <button
-              className={`py-2 px-4 font-medium ${
-                activeTab === "become"
-                  ? "border-b-2 border-red-500 text-red-600"
-                  : "text-gray-600"
-              }`}
-              onClick={() => setActiveTab("become")}
-            >
-              Become a Sponsor
-            </button>
+  {/* Current Sponsors Content */}
+  {activeTab === "current" && (
+    <div>
+      <p className="text-gray-600 mb-6">
+        We&apos;re grateful to the following organizations for their
+        support of the AI Symposium {new Date().getFullYear()}. Their
+        partnership enables us to provide world-class content and
+        experiences for our attendees.
+      </p>
+
+      <div className="flex flex-wrap justify-center gap-4 mb-6">
+        {/* Bronze Sponsor */}
+        <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[200px]">
+          <div className="py-2 px-3 font-semibold text-white bg-yellow-700 text-center text-sm">
+            Bronze Sponsors
           </div>
+          <div className="bg-gray-50 p-2 flex items-center justify-center h-24">
+            <img src="/images/sponsor/Area.png" alt="Direct Companies" className="max-h-12 object-contain" />
+          </div>
+        </div>
 
-<div className="flex flex-wrap justify-center gap-4 mb-6">
-  
-  {/* Bronze Sponsor */}
-  <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[200px]">
-    <div className="py-2 px-3 font-semibold text-white bg-yellow-700 text-center text-sm">
-      Bronze Sponsors
-    </div>
-    <div className="bg-gray-50 p-2 flex items-center justify-center h-24">
-      <img src="/images/sponsor/Area.png" alt="Direct Companies" className="max-h-12 object-contain" />
-    </div>
-  </div>
+        {/* Silver Sponsors */}
+        <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[240px]">
+          <div className="py-2 px-3 font-semibold text-white bg-gray-400 text-center text-sm">
+            Silver Sponsors
+          </div>
+          <div className="bg-gray-50 p-2 flex justify-around items-center h-24">
+            <img src="/images/sponsor/Sterling.png" alt="Sterling" className="max-h-12 object-contain" />
+            <img src="/images/sponsor/ieee_usa.png" alt="IEEE USA" className="max-h-12 object-contain" />
+          </div>
+        </div>
 
-  {/* Silver Sponsors */}
-  <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[240px]">
-    <div className="py-2 px-3 font-semibold text-white bg-gray-400 text-center text-sm">
-      Silver Sponsors
-    </div>
-    <div className="bg-gray-50 p-2 flex justify-around items-center h-24">
-      <img src="/images/sponsor/Sterling.png" alt="Sterling" className="max-h-12 object-contain" />
-      <img src="/images/sponsor/ieee_usa.png" alt="IEEE USA" className="max-h-12 object-contain" />
-    </div>
-  </div>
+        {/* Gold Sponsor */}
+        <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[200px]">
+          <div className="py-2 px-3 font-semibold text-white bg-yellow-500 text-center text-sm">
+            Gold Sponsors
+          </div>
+          <div className="bg-gray-50 p-2 flex items-center justify-center h-24">
+            <img src="/images/sponsor/dakota.png" alt="Dakota" className="max-h-12 object-contain" />
+          </div>
+        </div>
 
-  {/* Gold Sponsor */}
-  <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[200px]">
-    <div className="py-2 px-3 font-semibold text-white bg-yellow-500 text-center text-sm">
-      Gold Sponsors
+        {/* Partners */}
+        <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[260px]">
+          <div className="py-2 px-3 font-semibold text-white bg-gray-700 text-center text-sm">
+            Partners
+          </div>
+          <div className="bg-gray-50 px-2 py-1 flex items-center justify-center gap-2 h-24">
+            <img src="/images/sponsor/IEEE.png" alt="IEEE" className="h-10 object-contain" />
+            <img src="/images/sponsor/logo.png" alt="Generic Partner" className="h-10 object-contain" />
+            <img src="/images/sponsor/SD-BCC.png" alt="SD BCC" className="h-10 object-contain" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="bg-gray-50 p-2 flex items-center justify-center h-24">
-      <img src="/images/sponsor/dakota.png" alt="Dakota" className="max-h-12 object-contain" />
-    </div>
-  </div>
+  )}
 
-  {/* Partners */}
-  <div className="rounded-lg overflow-hidden shadow bg-white flex flex-col w-[260px]">
-    <div className="py-2 px-3 font-semibold text-white bg-gray-700 text-center text-sm">
-      Partners
-    </div>
-    <div className="bg-gray-50 px-2 py-1 flex items-center justify-center gap-2 h-24">
-      <img src="/images/sponsor/IEEE.png" alt="IEEE" className="h-10 object-contain" />
-      <img src="/images/sponsor/logo.png" alt="Generic Partner" className="h-10 object-contain" />
-      <img src="/images/sponsor/SD-BCC.png" alt="SD BCC" className="h-10 object-contain" />
-    </div>
-  </div>
+  {/* Become a Sponsor Content */}
+  {activeTab === "become" && (
+    <div>
+      <div className="bg-red-50 p-4 rounded-lg mb-6">
+        <div className="flex items-start">
+          <HandCoins className="text-red-500 h-6 w-6 mr-3 mt-1" />
+          <div>
+            <h3 className="font-medium text-gray-800">
+              Why Sponsor the AI Symposium?
+            </h3>
+            <p className="text-gray-600">
+              Join us as a sponsor and position your organization at the
+              forefront of AI innovation. Gain visibility with academia,
+              industry leaders, and government officials while
+              demonstrating your commitment to advancing artificial
+              intelligence research and applications.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        Sponsorship Opportunities
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        {sponsorshipTiers.map((tier, index) => (
+          <div
+            key={index}
+            className="border rounded-lg overflow-hidden"
+          >
+            <div
+              className={`
+              p-4 font-semibold text-white
+              ${
+                tier.tier === "Platinum"
+                  ? "bg-gray-700"
+                  : tier.tier === "Gold"
+                  ? "bg-yellow-500"
+                  : tier.tier === "Silver"
+                  ? "bg-gray-400"
+                  : "bg-yellow-700"
+              }
+            `}
+            >
+              {tier.tier} Sponsorship - {tier.cost}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-lg">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+          <Briefcase className="mr-2 text-red-500" size={20} />
+          Ready to Sponsor?
+        </h3>
+        <p className="text-gray-600 mb-4">
+          For more information about sponsorship opportunities or to
+          become a sponsor, please contact our sponsorship team:
+        </p>
+        <div className="space-y-2">
+          <p className="flex items-center text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2 text-red-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span>rodrigue.rizk@usd.edu and kc.santosh@usd.edu</span>
+          </p>
+          <p className="flex items-center text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2 text-red-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <span>(605) 658-6841</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  )}
 </div>
 
-
-
-          {/* Become a Sponsor Content */}
-          {activeTab === "become" && (
-            <div>
-              <div className="bg-red-50 p-4 rounded-lg mb-6">
-                <div className="flex items-start">
-                  <HandCoins className="text-red-500 h-6 w-6 mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-medium text-gray-800">
-                      Why Sponsor the AI Symposium?
-                    </h3>
-                    <p className="text-gray-600">
-                      Join us as a sponsor and position your organization at the
-                      forefront of AI innovation. Gain visibility with academia,
-                      industry leaders, and government officials while
-                      demonstrating your commitment to advancing artificial
-                      intelligence research and applications.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Sponsorship Opportunities
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                {sponsorshipTiers.map((tier, index) => (
-                  <div
-                    key={index}
-                    className="border rounded-lg overflow-hidden"
-                  >
-                    <div
-                      className={`
-                      p-4 font-semibold text-white
-                      ${
-                        tier.tier === "Platinum"
-                          ? "bg-gray-700"
-                          : tier.tier === "Gold"
-                          ? "bg-yellow-500"
-                          : tier.tier === "Silver"
-                          ? "bg-gray-400"
-                          : "bg-yellow-700"
-                      }
-                    `}
-                    >
-                      {tier.tier} Sponsorship - {tier.cost}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <Briefcase className="mr-2 text-red-500" size={20} />
-                  Ready to Sponsor?
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  For more information about sponsorship opportunities or to
-                  become a sponsor, please contact our sponsorship team:
-                </p>
-                <div className="space-y-2">
-                  <p className="flex items-center text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-2 text-red-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <span>rodrigue.rizk@usd.edu and kc.santosh@usd.edu</span>
-                  </p>
-                  <p className="flex items-center text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-2 text-red-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                    <span>(605) 658-6841</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
         {/* Conference Schedule */}
         <ConferenceSchedule />
         <CommitteeMembers />
