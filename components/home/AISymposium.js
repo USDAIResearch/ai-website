@@ -374,7 +374,7 @@ const AISymposium = () => {
             begin="0.3s"
             repeatCount="indefinite"
           />
-          Click to Register
+          Click to Download Your Certificate
         </text>
 
         {/* Enhanced decorative circuit lines with particle effects */}

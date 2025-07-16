@@ -161,6 +161,11 @@ const SpecificYearSymposium = () => {
           ></div>
 
           <div className="relative z-10 p-8 h-full flex flex-col justify-center">
+            <p className="text-lg leading-relaxed text-justify mb-4">
+              Thank you for participating in the event, To get your certificate of participation, 
+              Please follow this link <a href="https://forms.office.com/r/deink2VGxh" className="font-bold underline">https://forms.office.com/r/deink2VGxh </a>.
+               You will automatically recieved certificate via email.
+            </p>
             <div className="border-l-4 border-red-500 pl-4 mb-6">
               <h1
                 className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
