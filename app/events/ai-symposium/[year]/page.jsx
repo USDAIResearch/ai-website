@@ -140,33 +140,31 @@ const SpecificYearSymposium = () => {
     <Layout>
        <SymposiumNavbar />
       <div className="max-w-7xl mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <Link
-          href="/"
-          className="text-underline text-red-500 flex gap-2 font-bold"
-        >
-          <ArrowLeftCircleIcon /> Back to Homepage
-        </Link>
+{/* Back to Homepage */}
+<Link href="/" className="flex items-center text-red-500 font-bold gap-2 mb-4">
+  <ArrowLeftCircleIcon /> Back to Homepage
+</Link>
 
-        <div className="relative rounded-lg shadow-md overflow-hidden mb-8 mt-2 h-96 bg-white">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              // backgroundImage: "url('/images/banner-2.avif')",
-              backgroundPosition: "left 10%",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              transform: "scaleX(-1)",
-            }}
-          ></div>
-{/*** Combined card for both headings ***/}
+{/* Hero Banner */}
+{/* <div className="relative rounded-lg shadow-md overflow-hidden mb-8 mt-2 h-96 bg-white">
+  <div
+    className="absolute inset-0 bg-cover bg-center pointer-events-none"
+    style={{
+      backgroundImage: "url('/images/banner-2.avif')",
+      backgroundPosition: "left 10%",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "contain",
+      transform: "scaleX(-1)",
+    }}
+  />
+</div> */}
+
+{/* ——— Combined “Download” + “Welcome” Card ——— */}
 <div className="bg-white rounded-lg shadow-md p-6 mb-8">
 
-  {/*** “Download…” heading ***/}
+  {/* Download heading */}
   <div className="border-l-4 border-red-500 pl-4 mb-6">
-    <h1
-      className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
-    >
+    <h1 className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}>
       Download your certificate of participation
     </h1>
   </div>
@@ -176,42 +174,54 @@ const SpecificYearSymposium = () => {
     Participation, please complete the form at the following link:{" "}
     <a
       href="https://forms.office.com/r/deink2VGxh"
+      target="_blank"
+      rel="noopener noreferrer"
       className="font-bold underline"
     >
       https://forms.office.com/r/deink2VGxh
     </a>
-    . Once submitted, your certificate will be sent to you automatically via
-    email.
+    . Once submitted, your certificate will be sent to you automatically via email.
   </p>
 
-  {/*** Add vertical space then “Welcome…” heading ***/}
+  {/* Welcome heading (with extra top margin) */}
   <div className="border-l-4 border-red-500 pl-4 mt-8 mb-6">
-    <h1
-      className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
-    >
+    <h1 className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}>
       Welcome to 7th Artificial Intelligence Symposium {new Date().getFullYear()}
     </h1>
   </div>
 
-             <p className="text-lg leading-relaxed text-justify mb-4">
-               Join us for the University of South Dakota’s 
-               7th Annual <a href="https://www.ai-research-lab.org/events/ai-symposium/2025" className="font-bold underline">Artificial 
-               Intelligence Symposium</a>—formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by IEEE and held in conjunction with the inaugural <a href="https://sd-bcc.org/" 
-                className="font-bold underline">South Dakota Biomedical Computation Consortium (SDBCC)</a>.
-            </p>
+  <p className="text-lg leading-relaxed text-justify mb-4">
+    Join us for the University of South Dakota’s 7th Annual{" "}
+    <a
+      href="https://www.ai-research-lab.org/events/ai-symposium/2025"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-bold underline"
+    >
+      Artificial Intelligence Symposium
+    </a>
+    —formerly known as the Data Harnessing Symposium (2018–2019)—sponsored by
+    IEEE and held in conjunction with the inaugural{" "}
+    <a
+      href="https://sd-bcc.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-bold underline"
+    >
+      South Dakota Biomedical Computation Consortium (SDBCC)
+    </a>
+    .
+  </p>
 
+  <p className="text-lg leading-relaxed text-justify">
+    This premier event brings together thought leaders from academia, industry,
+    and government to explore the forefront of artificial intelligence, data
+    engineering, quantum computing, cyber threats, risk management, sustainable
+    agriculture, healthcare, and biomedical computing.
+  </p>
 
-            <p className="text-lg leading-relaxed text-justify">
-             This premier event brings together thought leaders from academia, industry,
-              and government to explore the forefront of artificial intelligence, data engineering,
-               quantum computing, cyber threats, risk management, sustainable agriculture, healthcare,
-                and biomedical computing.
+</div>
 
-            </p>
-
-            {/* Register Now CTA button */}
-          </div>
-        </div>
 
 
         {/* Known for Excellence */}
