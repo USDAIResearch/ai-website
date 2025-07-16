@@ -159,20 +159,39 @@ const SpecificYearSymposium = () => {
               transform: "scaleX(-1)",
             }}
           ></div>
+{/*** Combined card for both headings ***/}
+<div className="bg-white rounded-lg shadow-md p-6 mb-8">
 
-          <div className="relative z-10 p-8 h-full flex flex-col justify-center">
-            <p className="text-lg leading-relaxed text-justify mb-4">
-              Thank you for participating in the event, To get your certificate of participation, 
-              Please follow this link <a href="https://forms.office.com/r/deink2VGxh" className="font-bold underline">https://forms.office.com/r/deink2VGxh </a>.
-               You will automatically recieved certificate via email.
-            </p>
-            <div className="border-l-4 border-red-500 pl-4 mb-6">
-              <h1
-                className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
-              >
-                Welcome to 7th Artificial Intelligence Symposium {new Date().getFullYear()}
-              </h1>
-            </div>
+  {/*** “Download…” heading ***/}
+  <div className="border-l-4 border-red-500 pl-4 mb-6">
+    <h1
+      className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
+    >
+      Download your certificate of participation
+    </h1>
+  </div>
+
+  <p className="text-lg leading-relaxed text-justify mb-4">
+    Thank you for participating in the event! To receive your Certificate of
+    Participation, please complete the form at the following link:{" "}
+    <a
+      href="https://forms.office.com/r/deink2VGxh"
+      className="font-bold underline"
+    >
+      https://forms.office.com/r/deink2VGxh
+    </a>
+    . Once submitted, your certificate will be sent to you automatically via
+    email.
+  </p>
+
+  {/*** Add vertical space then “Welcome…” heading ***/}
+  <div className="border-l-4 border-red-500 pl-4 mt-8 mb-6">
+    <h1
+      className={`text-3xl md:text-4xl text-red-700 font-bold ${yanone.className}`}
+    >
+      Welcome to 7th Artificial Intelligence Symposium {new Date().getFullYear()}
+    </h1>
+  </div>
 
              <p className="text-lg leading-relaxed text-justify mb-4">
                Join us for the University of South Dakota’s 
